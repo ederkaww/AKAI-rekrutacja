@@ -1,0 +1,12 @@
+import json
+
+
+class Exporter:
+
+    def __init__(self):
+        self.data = []
+
+    def save_tasks(self, tasks):
+        # TODO zapisz taski do pliku tutaj
+        with open("taski.json", "w") as data_file:
+            json.dump(tasks, data_file)
